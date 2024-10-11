@@ -14,7 +14,7 @@ pipeline{
             steps{
                 sh 'curl -u<USERNAME>:<PASSWORD> -T \
                 jenkins_backup.tar \
-                "http://ec2-44-202-230-69.compute-1.amazonaws.com:8081/artifactory/geolocation/geolocation/geo/bio_${BUILD_ID}.jar"'
+                "http://ec2-44-202-230-69.compute-1.amazonaws.com:8081/artifactory/geolocation/geo/bio_${BUILD_ID}.jar"'
             }
 
         }
