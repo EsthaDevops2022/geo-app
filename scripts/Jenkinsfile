@@ -13,12 +13,8 @@ pipeline{
 
         stage('maven'){
             steps{
-                sh 'mvn clean'
-                sh 'mvn validate'
-                sh 'mvn compile' 
-                sh 'mvn install' 
-                sh 'mvn test'  
-                sh 'mvn package'
+                sh 'mvn clean validate compile install test package'
+                
             }
         }
         stage('upload artifact'){
